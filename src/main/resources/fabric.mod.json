@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "lively_hotbar",
+  "version": "${version}",
+  "name": "Lively Hotbar",
+  "description": "The hotbar selection frame slides from slot to slot instead of jumping. Client-side only.",
+  "authors": [
+    "UZIK"
+  ],
+  "license": "MIT",
+  "contact": {
+    "sources": "https://github.com/uzik-dev/lively-hotbar",
+    "issues": "https://github.com/uzik-dev/lively-hotbar/issues"
+  },
+  "icon": "assets/lively_hotbar/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.vlads.livelyhotbar.LivelyHotbar"
+    ]
+  },
+  "mixins": [
+    "lively_hotbar.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": ">=26.3 <26.4",
+    "java": ">=25"
+  }
+}
